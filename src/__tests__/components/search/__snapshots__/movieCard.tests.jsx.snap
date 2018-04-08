@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`movieCard should render the movie correctly 1`] = `
+<div
+  className="col-lg-3 col-md-4 col-sm-6 col-xs-12"
+>
+  <div
+    className="card"
+  >
+    <a
+      href="/movie/1"
+      onClick={[Function]}
+    >
+      <img
+        alt="A Movie"
+        className="card-img-top"
+        src="1.png"
+      />
+    </a>
+  </div>
+</div>
+`;
