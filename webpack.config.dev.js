@@ -53,8 +53,8 @@ export default {
                 loader: 'file-loader?name=[name].[ext]',
             },
             {
-                test: /(\.css|\.scss|\.sass)$/,
-                use: ExtractTextPlugin.extract({ use: 'css-loader' }),
+                test: /(\.css)$/,
+                loaders: ['style-loader', 'css-loader'],
             },
         ],
     },
