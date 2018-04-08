@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import Loading from '../loading';
 import MovieList from './movieList';
 
+const searchStorageKey = 'search';
+
 class Page extends React.PureComponent {
     constructor(props) {
         super(props);
@@ -16,15 +18,39 @@ class Page extends React.PureComponent {
         };
     }
 
-    componentDidMount() {
-        this.props.actions.search(this.props.searchText, this.props.config)
-            .then(movies => this.setState({
+    componentWillMount() {
+        const storedSearch = this.props.storage.getItem(searchStorageKey);
+        if (!storedSearch) { return; }
+
+        const foundSearch = JSON.parse(storedSearch);
+        if (foundSearch.searchText === this.props.searchText) {
+            this.setState({
                 search: {
                     searching: false,
                     searchError: false,
-                    movies,
+                    movies: foundSearch.results,
                 },
-            }))
+            });
+        }
+    }
+
+    componentDidMount() {
+        if (!this.state.search.searching) { return; }
+
+        this.props.actions.search(this.props.searchText, this.props.config)
+            .then((movies) => {
+                this.setState({
+                    search: {
+                        searching: false,
+                        searchError: false,
+                        movies,
+                    },
+                });
+                this.props.storage.setItem(searchStorageKey, JSON.stringify({
+                    searchText: this.props.searchText,
+                    results: movies,
+                }));
+            })
             .catch(() => this.setState({
                 search: {
                     searching: false,
@@ -59,6 +85,10 @@ Page.propTypes = {
     }).isRequired,
     config: PropTypes.shape({}).isRequired,
     searchText: PropTypes.string.isRequired,
+    storage: PropTypes.shape({
+        getItem: PropTypes.func,
+        setItem: PropTypes.func,
+    }).isRequired,
 };
 
 export default Page;

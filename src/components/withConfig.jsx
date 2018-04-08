@@ -61,7 +61,7 @@ const WithConfig = (ComponentForConfig, actions, storage) => {
                     }
 
                     {!this.state.loading && this.state.config &&
-                        <ComponentForConfig {...this.props} config={this.state.config} />}
+                        <ComponentForConfig {...this.props} config={this.state.config} storage={storage} />}
 
                 </div>);
         }
