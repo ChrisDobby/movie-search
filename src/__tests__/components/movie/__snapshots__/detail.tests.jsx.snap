@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`movieCard should render the movie detail correctly 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-lg-8 col-md-7 col-sm-6 col-xs-12"
+  >
+    <h1>
+      A Movie
+    </h1>
+    <h3>
+      some tagline
+    </h3>
+    <p>
+      something
+    </p>
+  </div>
+  <div
+    className="col-lg-4 col-md-5 col-sm-6 col-xs-12"
+  >
+    <img
+      alt="A Movie"
+      src="1.png"
+      style={
+        Object {
+          "borderRadius": "8px",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+</div>
+`;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Wait from './wait';
+import Loading from '../loading';
 import SearchEntry from './searchEntry';
 import MovieList from './movieList';
 
@@ -56,7 +56,7 @@ class Page extends React.PureComponent {
                 }
 
                 {this.state.search.searching &&
-                    <Wait />}
+                    <Loading />}
 
                 {!this.state.search.searching && this.state.search.movies.length > 0 &&
                     <MovieList movies={this.state.search.movies} />}
