@@ -1,0 +1,205 @@
+{
+    "page": 1,
+    "total_results": 11,
+    "total_pages": 1,
+    "results": [
+        {
+            "vote_count": 1220,
+            "id": 116149,
+            "video": false,
+            "vote_average": 7,
+            "title": "Paddington",
+            "popularity": 15.289089,
+            "poster_path": "/hfjfjYsTBHgfogLWWiTm5OP7KpD.jpg",
+            "original_language": "en",
+            "original_title": "Paddington",
+            "genre_ids": [
+                35,
+                12
+            ],
+            "backdrop_path": "/zwMEMIo1j5TjP9oUG89aWCKDjYt.jpg",
+            "adult": false,
+            "overview": "After a deadly earthquake destroys his home in Peruvian rainforest, a young bear makes his way to England in search of a new home. The bear, dubbed \"Paddington\" for the london train station, finds shelter with the family of Henry and Mary Brown. Although Paddington's amazement at urban living soon endears him to the Browns, someone else has her eye on him: Taxidermist Millicent Clyde has designs on the rare bear and his hide.",
+            "release_date": "2014-11-28"
+        },
+        {
+            "vote_count": 300,
+            "id": 346648,
+            "video": false,
+            "vote_average": 7.6,
+            "title": "Paddington 2",
+            "popularity": 25.14948,
+            "poster_path": "/zuXMvSQq9F7H29qzuUm0qyUqw6m.jpg",
+            "original_language": "en",
+            "original_title": "Paddington 2",
+            "genre_ids": [
+                12,
+                35,
+                10751
+            ],
+            "backdrop_path": "/dixP2X8GbQF0KjkkBnwgOAikjjC.jpg",
+            "adult": false,
+            "overview": "Paddington, now happily settled with the Brown family and a popular member of the local community, picks up a series of odd jobs to buy the perfect present for his Aunt Lucy's 100th birthday, only for the gift to be stolen.",
+            "release_date": "2017-11-09"
+        },
+        {
+            "vote_count": 0,
+            "id": 384692,
+            "video": false,
+            "vote_average": 0,
+            "title": "Paddington Lace",
+            "popularity": 1.000004,
+            "poster_path": "/iBf8ElLtXSagQekKRN9P9Zy9F8W.jpg",
+            "original_language": "en",
+            "original_title": "Paddington Lace",
+            "genre_ids": [],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "Paddington is one of Sydney's oldest suburbs, which has developed somewhat along the lines of New York's Greenwich Village or London's Chelsea and has become Sydney's artist colony. This is a fully dramatised film, which captures the essence of Paddington, not only by striking visuals of the Old-Sydney architecture in the area, but by re-enacting the mood and lifestyle of some typical, bohemian inhabitants. Scripted by Joan Long. Music by Grahame Bond and Rory O'Donaghue. Starring Ross Thompson, Janne Wesley and Ron Blanchard.",
+            "release_date": "1971-04-21"
+        },
+        {
+            "vote_count": 1,
+            "id": 97278,
+            "video": false,
+            "vote_average": 7,
+            "title": "Paddington Goes to School",
+            "popularity": 1.079139,
+            "poster_path": "/moTnEdrRPIBUJtBnwolz2RNrqr4.jpg",
+            "original_language": "en",
+            "original_title": "Paddington Goes to School",
+            "genre_ids": [
+                16
+            ],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "The local truant officer informs Mrs. Brown (Paddington's keeper) that since he is of age, Paddington must go to school.",
+            "release_date": "1986-01-01"
+        },
+        {
+            "vote_count": 3,
+            "id": 499292,
+            "video": false,
+            "vote_average": 8.3,
+            "title": "Miss Marple: 4.50 from Paddington",
+            "popularity": 1.46549,
+            "poster_path": "/7shPR4Hhfk4pIXlK4pXDEFLjO4M.jpg",
+            "original_language": "en",
+            "original_title": "Miss Marple: 4.50 from Paddington",
+            "genre_ids": [
+                80,
+                18
+            ],
+            "backdrop_path": "/ilPdcOMyltrY0lzqcbNaGmruSjw.jpg",
+            "adult": false,
+            "overview": "Travelling on the 4.50 from Paddington, Mrs McGillicuddy witnesses a murder on a passing train - but where is the body?",
+            "release_date": "1987-02-25"
+        },
+        {
+            "vote_count": 1,
+            "id": 478757,
+            "video": false,
+            "vote_average": 5,
+            "title": "Marple: 450 from Paddington",
+            "popularity": 1.037397,
+            "poster_path": "/qp7v7mwscnEPa0NoyRDDMQDUPsW.jpg",
+            "original_language": "en",
+            "original_title": "Marple: 450 from Paddington",
+            "genre_ids": [
+                80
+            ],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "Miss Marple investigates the wealthy Crackenthorpe clan, believing a body to be hidden on their estate after a visiting friend witnesses a brutal strangling murder occurring on a passing train.",
+            "release_date": "2004-12-26"
+        },
+        {
+            "vote_count": 0,
+            "id": 502365,
+            "video": false,
+            "vote_average": 0,
+            "title": "Paddington Goes to the Movies",
+            "popularity": 1.000014,
+            "poster_path": "/9CIDa1WXPcAovq6G4P66hZ12IFq.jpg",
+            "original_language": "en",
+            "original_title": "Paddington Goes to the Movies",
+            "genre_ids": [],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "The incorrigible Paddington, inspired by the magic of the Silver Screen and a sudden rainstorm, follows the famous footsteps of Gene Kelly and in his own way \"dances in the rain\" with hilarious consequences.",
+            "release_date": ""
+        },
+        {
+            "vote_count": 0,
+            "id": 443087,
+            "video": true,
+            "vote_average": 0,
+            "title": "Paddington Bear Goes to the Movies",
+            "popularity": 1.000048,
+            "poster_path": "/mhNZT4TogMC3g3s27rpTDMn5qYM.jpg",
+            "original_language": "en",
+            "original_title": "Paddington Bear Goes to the Movies",
+            "genre_ids": [],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "Paddington, having just seen Gene Kelly on the cinema screen, takes to the streets in a rain storm with his umbrella. Join him as he starts singin' and dancin' in the rain.",
+            "release_date": "1980-03-15"
+        },
+        {
+            "vote_count": 0,
+            "id": 154794,
+            "video": false,
+            "vote_average": 0,
+            "title": "Paddington Bear - Please Look After This Bear",
+            "popularity": 1.003535,
+            "poster_path": "/e2WWu3bgQRSBWzAdfKEsso1T4vZ.jpg",
+            "original_language": "en",
+            "original_title": "Paddington Bear - Please Look After This Bear",
+            "genre_ids": [],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "Episodes are: 'Please Look After This Bear'; 'A Bear in Hot Water'; 'Paddington Goes Underground'; 'A Shopping Expedition'; 'Paddington and the Old Master'; 'A Spot of Decorating'; 'A Family Group'; 'Paddington Makes a Bid'; 'Do-It-Yourself'; 'A Disappearing Trick'; 'Something Nasty in the Kitchen'; and 'Trouble at the Launderette'.",
+            "release_date": "2006-02-06"
+        },
+        {
+            "vote_count": 0,
+            "id": 317644,
+            "video": false,
+            "vote_average": 0,
+            "title": "Paddington's Birthday Bonanza",
+            "popularity": 1.001182,
+            "poster_path": "/ff6Mh88J3UoTIfHTvrUyk5XLnKU.jpg",
+            "original_language": "en",
+            "original_title": "Paddington's Birthday Bonanza",
+            "genre_ids": [
+                16,
+                35
+            ],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "Mr. Brown's birthday is drawing near and Paddington is worried because he can't afford to buy him a present. His efforts to raise some money lead him into a series of misadventures, first as a waiter at a society dinner, then as the dancing partner of the hostess, Mrs. Smith-Cholmley, in a televised dance competition at the local charity ball.",
+            "release_date": "1986-01-01"
+        },
+        {
+            "vote_count": 44,
+            "id": 750,
+            "video": false,
+            "vote_average": 7.3,
+            "title": "Murder She Said",
+            "popularity": 4.093112,
+            "poster_path": "/8GADjoCjzhu4a24f5KXFVqOjjsY.jpg",
+            "original_language": "en",
+            "original_title": "Murder She Said",
+            "genre_ids": [
+                18,
+                80,
+                9648,
+                35
+            ],
+            "backdrop_path": "/9CfXxe3AdpB7RGRyXvNgUy61lfQ.jpg",
+            "adult": false,
+            "overview": "Miss Marple believes she’s seen a murder in a passing by train yet when the police find no evidence she decides to investigate it on her own. Her inquisitions lead her to a mountain top. The first of four films starring Margaret Rutherford as Miss Marple that all achieved cult status.",
+            "release_date": "1961-01-01"
+        }
+    ]
+}
