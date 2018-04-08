@@ -37,8 +37,8 @@ const profileImageSize = 'w185';
 
 const YouTubeSite = 'YouTube';
 
-const createImageUrl = (baseUrl, size, imagePath) =>
-    `${baseUrl}${size}${imagePath}`;
+const createImageUrl = (baseUrl, size, imagePath) => (
+    imagePath ? `${baseUrl}${size}${imagePath}` : null);
 
 const createPosterImageUrl = (baseUrl, imagePath) => createImageUrl(baseUrl, searchPosterSize, imagePath);
 const createProfileImageUrl = (baseUrl, imagePath) => createImageUrl(baseUrl, profileImageSize, imagePath);

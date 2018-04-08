@@ -6,7 +6,13 @@ const MovieCard = ({ movie }) => (
     <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12">
         <div className="card">
             <Link to={`/movie/${movie.id}`}>
-                <img className="card-img-top" src={movie.posterImage} alt={movie.title} />
+                {movie.posterImage
+                    ? <img className="card-img-top" src={movie.posterImage} alt={movie.title} />
+                    : (
+                        <div className="card-body">
+                            <h5 className="card-title">{movie.title}</h5>
+                        </div>)
+                }
             </Link>
         </div>
     </div>);

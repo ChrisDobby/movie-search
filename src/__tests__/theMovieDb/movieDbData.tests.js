@@ -30,6 +30,10 @@ describe('movieDbData', () => {
         it('should create a url for movie posters', () => {
             expect(movies[0].posterImage).toBe(`${config.baseImageUrl}w300/hfjfjYsTBHgfogLWWiTm5OP7KpD.jpg`);
         });
+
+        it('should return no poster url if no path is specified', () => {
+            expect(movies[10].posterImage).toBeFalsy();
+        });
     });
 
     describe('movie', () => {
@@ -69,6 +73,10 @@ describe('movieDbData', () => {
 
         it('should create a url for the cast member profile', () => {
             expect(cast[0].profileImage).toBe(`${config.baseImageUrl}w185/e74Cz65ifeNb9zHfUTvF5rTix0d.jpg`);
+        });
+
+        it('should return no profile url for if no path specified', () => {
+            expect(cast[13].profileImage).toBeFalsy();
         });
     });
 
