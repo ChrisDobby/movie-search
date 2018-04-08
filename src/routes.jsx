@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Route } from 'react-router-dom';
+import HomePage from './components/homePage';
 import SearchPage from './components/search/page';
 import MoviePage from './components/movie/page';
 import WithNavBar from './components/withNavBar';
@@ -18,7 +19,19 @@ const PageWithNavBar = (page, props, actions) => {
 
 const Routes = ({ actions }) => (
     <div className="container-fluid">
-        <Route exact path="/" render={props => PageWithNavBar(SearchPage, props, actions)} />
+        <Route exact path="/" render={props => PageWithNavBar(HomePage, props, actions)} />
+        <Route
+            exact
+            path="/search/:searchText"
+            render={props => PageWithNavBar(
+                SearchPage,
+                {
+                    ...props,
+                    searchText: props.match.params.searchText,
+                },
+                actions
+            )}
+        />
         <Route
             exact
             path="/movie/:id"
@@ -39,6 +52,7 @@ Routes.propTypes = {
     match: PropTypes.shape({
         params: PropTypes.shape({
             id: PropTypes.string,
+            searchText: PropTypes.string,
         }),
     }),
 };

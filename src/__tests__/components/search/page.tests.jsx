@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
+import { MemoryRouter } from 'react-router';
 import SearchPage from '../../../components/search/page';
 
 describe('search page', () => {
@@ -8,7 +9,7 @@ describe('search page', () => {
         baseImageUrl: 'http://www.google.com',
     });
 
-    const mockSearch = [{}];
+    const mockSearch = [{ id: 1 }];
 
     const successfulActions = {
         search: jest.fn(() => Promise.resolve(mockSearch)),
@@ -19,12 +20,7 @@ describe('search page', () => {
     };
 
     it('should set state from succesful search action', () => {
-        const page = shallow(<SearchPage actions={successfulActions} config={mockConfig} />);
-        page.setState({
-            configuration: { config: mockConfig },
-        });
-
-        page.instance().movieSearch('paddington');
+        const page = shallow(<SearchPage actions={successfulActions} config={mockConfig} searchText="paddington" />);
 
         return new Promise(resolve => setImmediate(resolve))
             .then(() => {
@@ -35,12 +31,7 @@ describe('search page', () => {
     });
 
     it('should set state from failed search action', () => {
-        const page = shallow(<SearchPage actions={failingActions} config={mockConfig} />);
-        page.setState({
-            configuration: { config: mockConfig },
-        });
-
-        page.instance().movieSearch('paddington');
+        const page = shallow(<SearchPage actions={failingActions} config={mockConfig} searchText="paddington" />);
 
         return new Promise(resolve => setImmediate(resolve))
             .then(() => {
@@ -51,7 +42,14 @@ describe('search page', () => {
     });
 
     it('should render correctly when searching', () => {
-        const page = renderer.create(<SearchPage actions={successfulActions} config={mockConfig} />);
+        const page = renderer.create((
+            <MemoryRouter>
+                <SearchPage
+                    actions={successfulActions}
+                    config={mockConfig}
+                    searchText="paddington"
+                />
+            </MemoryRouter>));
         page.getInstance().setState({
             search: {
                 searching: true,
@@ -64,7 +62,14 @@ describe('search page', () => {
     });
 
     it('should render correctly when search failed', () => {
-        const page = renderer.create(<SearchPage actions={successfulActions} config={mockConfig} />);
+        const page = renderer.create((
+            <MemoryRouter>
+                <SearchPage
+                    actions={successfulActions}
+                    config={mockConfig}
+                    searchText="paddington"
+                />
+            </MemoryRouter>));
         page.getInstance().setState({
             search: {
                 searching: false,

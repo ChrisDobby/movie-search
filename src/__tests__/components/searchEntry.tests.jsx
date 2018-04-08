@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import SearchEntry from '../../../components/search/searchEntry';
+import SearchEntry from '../../components/searchEntry';
 
 describe('searchEntry', () => {
     beforeEach(() => jest.resetAllMocks());

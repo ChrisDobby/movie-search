@@ -3,70 +3,29 @@
 exports[`search page should render correctly when search failed 1`] = `
 <div>
   <div
-    className="input-group mb-3"
+    className="col-md-12"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
   >
-    <input
-      aria-describedby="basic-addon2"
-      aria-label="Search for a movie"
-      className="form-control"
-      onChange={[Function]}
-      onKeyDown={[Function]}
-      placeholder="Search for a movie"
-      type="text"
-      value=""
-    />
-    <div
-      className="input-group-append"
-    >
-      <button
-        className="btn btn-outline-secondary"
-        onClick={[Function]}
-        type="button"
-      >
-        <i
-          className="fas fa-search"
-        />
-      </button>
+    <div>
+      <i
+        className="fa fa-spinner fa-spin"
+        style={
+          Object {
+            "fontSize": "24px",
+          }
+        }
+      />
     </div>
-  </div>
-  <div
-    className="alert alert-danger"
-    role="alert"
-  >
-    There was an error searching.  Please try again.
   </div>
 </div>
 `;
 
 exports[`search page should render correctly when searching 1`] = `
 <div>
-  <div
-    className="input-group mb-3"
-  >
-    <input
-      aria-describedby="basic-addon2"
-      aria-label="Search for a movie"
-      className="form-control"
-      onChange={[Function]}
-      onKeyDown={[Function]}
-      placeholder="Search for a movie"
-      type="text"
-      value=""
-    />
-    <div
-      className="input-group-append"
-    >
-      <button
-        className="btn btn-outline-secondary"
-        onClick={[Function]}
-        type="button"
-      >
-        <i
-          className="fas fa-search"
-        />
-      </button>
-    </div>
-  </div>
   <div
     className="col-md-12"
     style={
