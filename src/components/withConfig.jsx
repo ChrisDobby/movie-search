@@ -1,7 +1,9 @@
 import React from 'react';
 import Loading from './loading';
 
-const WithConfig = (ComponentForConfig, actions) => {
+const configStorageKey = 'config';
+
+const WithConfig = (ComponentForConfig, actions, storage) => {
     class ConfigComponent extends React.PureComponent {
         constructor(props) {
             super(props);
@@ -13,13 +15,30 @@ const WithConfig = (ComponentForConfig, actions) => {
             };
         }
 
-        componentDidMount() {
-            actions.getConfig()
-                .then(config => this.setState({
+        componentWillMount() {
+            const storedConfig = storage.getItem(configStorageKey);
+            if (storedConfig) {
+                this.setState({
                     loading: false,
                     error: false,
-                    config,
-                }))
+                    config: JSON.parse(storedConfig),
+                });
+            }
+        }
+
+        componentDidMount() {
+            if (this.state.config) { return; }
+
+            actions.getConfig()
+                .then((config) => {
+                    this.setState({
+                        loading: false,
+                        error: false,
+                        config,
+                    });
+
+                    storage.setItem(configStorageKey, JSON.stringify(config));
+                })
                 .catch(() => this.setState({
                     loading: false,
                     error: true,

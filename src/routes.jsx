@@ -9,7 +9,8 @@ import WithConfig from './components/withConfig';
 const PageWithNavBar = (page, props, actions) => {
     const NewPage = WithConfig(
         WithNavBar(page),
-        actions
+        actions,
+        sessionStorage
     );
 
     return <NewPage {...props} actions={actions} />;
