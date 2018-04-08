@@ -1,0 +1,86 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:jest/recommended",
+        "airbnb"
+    ],
+    "plugins": [
+        "react",
+        "jest"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "jquery": true,
+        "jest/globals": true
+    },
+    "rules": {
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error",
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "ignoreComments": true
+            }
+        ],
+        "comma-dangle": [
+            "error",
+            "always-multiline"
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 120,
+                "tabWidth": 4,
+                "ignoreComments": true,
+                "ignoreTrailingComments": true,
+                "ignoreUrls": true
+            }
+        ],
+        "func-style": [
+            "error",
+            "declaration",
+            {
+                "allowArrowFunctions": true
+            }
+        ],
+        "react/jsx-indent": [
+            "error",
+            4
+        ],
+        "react/jsx-indent-props": [
+            "error",
+            4
+        ],
+        "jsx-a11y/anchor-is-valid": [ "error", {
+            "components": [ "Link" ],
+            "specialLink": [ "hrefLeft", "hrefRight", "to" ],
+            "aspects": [ "noHref", "invalidHref", "preferButton" ]
+          }
+        ],
+        "jsx-a11y/label-has-for": [2, {
+            "required": {
+                "some": [ "nesting", "id" ]
+            }
+        }]
+    }
+}
