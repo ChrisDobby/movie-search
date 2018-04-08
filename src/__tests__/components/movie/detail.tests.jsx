@@ -9,7 +9,7 @@ describe('movieCard', () => {
         tagLine: 'some tagline',
         overview: 'something',
         posterImage: '1.png',
-        genres: [],
+        genres: ['Action'],
     };
 
     it('should render the movie detail correctly', () => {
