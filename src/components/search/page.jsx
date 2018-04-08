@@ -9,11 +9,6 @@ class Page extends React.PureComponent {
         super(props);
 
         this.state = {
-            configuration: {
-                loading: true,
-                loadingError: false,
-                config: null,
-            },
             search: {
                 searching: false,
                 searchError: false,
@@ -22,24 +17,6 @@ class Page extends React.PureComponent {
         };
 
         this.movieSearch = this.movieSearch.bind(this);
-    }
-
-    componentDidMount() {
-        this.props.actions.getConfig()
-            .then(config => this.setState({
-                configuration: {
-                    loading: false,
-                    loadingError: false,
-                    config,
-                },
-            }))
-            .catch(() => this.setState({
-                configuration: {
-                    loading: false,
-                    loadingError: true,
-                    config: null,
-                },
-            }));
     }
 
     movieSearch(searchText) {
@@ -51,7 +28,7 @@ class Page extends React.PureComponent {
             },
         });
 
-        this.props.actions.search(searchText, this.state.configuration.config)
+        this.props.actions.search(searchText, this.props.config)
             .then(movies => this.setState({
                 search: {
                     searching: false,
@@ -71,20 +48,14 @@ class Page extends React.PureComponent {
     render() {
         return (
             <div>
-                {this.state.configuration.config &&
-                <SearchEntry doSearch={this.movieSearch} />}
-                {this.state.configuration.loadingError &&
-                    <div className="alert alert-danger" role="alert">
-                        There was an error loading the movie db configuration.  Refresh to try again.
-                    </div>
-                }
+                <SearchEntry doSearch={this.movieSearch} />
                 {this.state.search.searchError &&
                     <div className="alert alert-danger" role="alert">
                         There was an error searching.  Please try again.
                     </div>
                 }
 
-                {(this.state.configuration.loading || this.state.search.searching) &&
+                {this.state.search.searching &&
                     <Wait />}
 
                 {!this.state.search.searching && this.state.search.movies.length > 0 &&
@@ -96,9 +67,9 @@ class Page extends React.PureComponent {
 
 Page.propTypes = {
     actions: PropTypes.shape({
-        getConfig: PropTypes.func,
         search: PropTypes.func,
     }).isRequired,
+    config: PropTypes.shape({}).isRequired,
 };
 
 export default Page;

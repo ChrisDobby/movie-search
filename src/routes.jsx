@@ -3,9 +3,13 @@ import PropTypes from 'prop-types';
 import { Route } from 'react-router-dom';
 import SearchPage from './components/search/page';
 import WithNavBar from './components/withNavBar';
+import WithConfig from './components/withConfig';
 
 const PageWithNavBar = (page, props, actions) => {
-    const NewPage = WithNavBar(page);
+    const NewPage = WithConfig(
+        WithNavBar(page),
+        actions
+    );
 
     return <NewPage {...props} actions={actions} />;
 };

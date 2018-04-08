@@ -1,8 +1,7 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 import SearchPage from '../../../components/search/page';
-
 
 describe('search page', () => {
     const mockConfig = ({
@@ -12,37 +11,15 @@ describe('search page', () => {
     const mockSearch = [{}];
 
     const successfulActions = {
-        getConfig: jest.fn(() => Promise.resolve(mockConfig)),
         search: jest.fn(() => Promise.resolve(mockSearch)),
     };
 
     const failingActions = {
-        getConfig: jest.fn(() => Promise.reject()),
         search: jest.fn(() => Promise.reject()),
     };
 
-    it('should set state from succesful config action', () => {
-        const page = mount(<SearchPage actions={successfulActions} />);
-        return new Promise(resolve => setImmediate(resolve))
-            .then(() => {
-                expect(page.state().configuration.loading).toBeFalsy();
-                expect(page.state().configuration.loadingError).toBeFalsy();
-                expect(page.state().configuration.config).toEqual(mockConfig);
-            });
-    });
-
-    it('should set state from failed config action', () => {
-        const page = mount(<SearchPage actions={failingActions} />);
-        return new Promise(resolve => setImmediate(resolve))
-            .then(() => {
-                expect(page.state().configuration.loading).toBeFalsy();
-                expect(page.state().configuration.loadingError).toBeTruthy();
-                expect(page.state().configuration.config).toBeFalsy();
-            });
-    });
-
     it('should set state from succesful search action', () => {
-        const page = shallow(<SearchPage actions={successfulActions} />);
+        const page = shallow(<SearchPage actions={successfulActions} config={mockConfig} />);
         page.setState({
             configuration: { config: mockConfig },
         });
@@ -58,7 +35,7 @@ describe('search page', () => {
     });
 
     it('should set state from failed search action', () => {
-        const page = shallow(<SearchPage actions={failingActions} />);
+        const page = shallow(<SearchPage actions={failingActions} config={mockConfig} />);
         page.setState({
             configuration: { config: mockConfig },
         });

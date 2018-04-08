@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WithConfig should render correctly when loading config 1`] = `
+<div
+  className="col-md-12"
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }
+>
+  <div>
+    <i
+      className="fa fa-spinner fa-spin"
+      style={
+        Object {
+          "fontSize": "24px",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`WithConfig should render correctly when loading config failed 1`] = `
+<div>
+  <div
+    className="alert alert-danger"
+    role="alert"
+  >
+    There was an error loading the movie db configuration.  Refresh to try again.
+  </div>
+</div>
+`;
+
+exports[`WithConfig should render correctly when loading config successful 1`] = `
+<div>
+  <div>
+    http://www.google.com
+  </div>
+</div>
+`;
