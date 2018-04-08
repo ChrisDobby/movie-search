@@ -59,3 +59,6 @@ stats.html
 
 # junit report
 junit.xml
+
+# jsdoc output
+docs
