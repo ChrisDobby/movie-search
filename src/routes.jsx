@@ -2,10 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Route } from 'react-router-dom';
 import SearchPage from './components/search/page';
+import WithNavBar from './components/withNavBar';
+
+const PageWithNavBar = (page, props, actions) => {
+    const NewPage = WithNavBar(page);
+
+    return <NewPage {...props} actions={actions} />;
+};
 
 const Routes = ({ actions }) => (
     <div className="container-fluid">
-        <Route exact path="/" render={props => <SearchPage {...props} actions={actions} />} />
+        <Route exact path="/" render={props => PageWithNavBar(SearchPage, props, actions)} />
     </div>
 );
 
