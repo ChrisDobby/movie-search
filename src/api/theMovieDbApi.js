@@ -3,6 +3,8 @@
 const ConfigurationRoute = '/configuration';
 const SearchRoute = '/search';
 const MovieRoute = '/movie';
+const CreditsRoute = '/credits';
+const VideosRoute = '/videos';
 const ApiKeyQueryString = 'api_key';
 const SearchQueryString = 'query';
 
@@ -30,9 +32,33 @@ const TheMovieDbApi = (apiUrl, apiKey) => {
         fetch(`${apiUrl}${SearchRoute}${MovieRoute}?${ApiKeyQueryString}=${apiKey}&${SearchQueryString}=${searchText}`)
             .then(response => handleResponse(response, resolve, reject)));
 
+    /** @function getMovie
+     * Gets a movie details
+     * @param movieId the id of the movie */
+    const getMovie = movieId => new Promise((resolve, reject) =>
+        fetch(`${apiUrl}${MovieRoute}/${movieId}?${ApiKeyQueryString}=${apiKey}`)
+            .then(response => handleResponse(response, resolve, reject)));
+
+    /** @function getCredits
+     * Gets the credits for a movie
+     * @param movieId the id of the movie */
+    const getCredits = movieId => new Promise((resolve, reject) =>
+        fetch(`${apiUrl}${MovieRoute}/${movieId}${CreditsRoute}?${ApiKeyQueryString}=${apiKey}`)
+            .then(response => handleResponse(response, resolve, reject)));
+
+    /** @function getVideos
+     * Gets videos associated with a movie
+     * @param movieId the id of the movie */
+    const getVideos = movieId => new Promise((resolve, reject) =>
+        fetch(`${apiUrl}${MovieRoute}/${movieId}${VideosRoute}?${ApiKeyQueryString}=${apiKey}`)
+            .then(response => handleResponse(response, resolve, reject)));
+
     return {
         getConfig,
         searchMovie,
+        getMovie,
+        getCredits,
+        getVideos,
     };
 };
 

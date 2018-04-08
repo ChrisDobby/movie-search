@@ -1,0 +1,58 @@
+{
+    "adult": false,
+    "backdrop_path": "/zwMEMIo1j5TjP9oUG89aWCKDjYt.jpg",
+    "belongs_to_collection": {
+      "id": 488924,
+      "name": "Paddington Collection",
+      "poster_path": "/zvMcT9kPOj5sqY7r1XQRjcey1o6.jpg",
+      "backdrop_path": "/toCfwADOGcjizpfJ22G7kurBEUG.jpg"
+    },
+    "budget": 55000000,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 12,
+        "name": "Adventure"
+      }
+    ],
+    "homepage": "http://www.paddington.com/",
+    "id": 116149,
+    "imdb_id": "tt1109624",
+    "original_language": "en",
+    "original_title": "Paddington",
+    "overview": "After a deadly earthquake destroys his home in Peruvian rainforest, a young bear makes his way to England in search of a new home. The bear, dubbed \"Paddington\" for the london train station, finds shelter with the family of Henry and Mary Brown. Although Paddington's amazement at urban living soon endears him to the Browns, someone else has her eye on him: Taxidermist Millicent Clyde has designs on the rare bear and his hide.",
+    "popularity": 12.130621,
+    "poster_path": "/hfjfjYsTBHgfogLWWiTm5OP7KpD.jpg",
+    "production_companies": [
+      {
+        "id": 437,
+        "logo_path": "/nu20mtwbEIhUNnQ5NXVhHsNknZj.png",
+        "name": "Heyday Films",
+        "origin_country": "GB"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "GB",
+        "name": "United Kingdom"
+      }
+    ],
+    "release_date": "2014-11-28",
+    "revenue": 259207227,
+    "runtime": 95,
+    "spoken_languages": [
+      {
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Released",
+    "tagline": "THE ADVENTURE BEGINS",
+    "title": "Paddington",
+    "video": false,
+    "vote_average": 7,
+    "vote_count": 1246
+  }
