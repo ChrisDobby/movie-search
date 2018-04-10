@@ -1,23 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`WithConfig should render correctly when loading config 1`] = `
-<div
-  className="col-md-12"
-  style={
-    Object {
-      "textAlign": "center",
-    }
-  }
->
-  <div>
-    <i
-      className="fa fa-spinner fa-spin"
-      style={
-        Object {
-          "fontSize": "24px",
-        }
+<div>
+  <div
+    className="col-md-12"
+    style={
+      Object {
+        "textAlign": "center",
       }
-    />
+    }
+  >
+    <div>
+      <i
+        className="fa fa-spinner fa-spin"
+        style={
+          Object {
+            "fontSize": "24px",
+          }
+        }
+      />
+    </div>
   </div>
 </div>
 `;

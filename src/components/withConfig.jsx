@@ -47,10 +47,6 @@ const WithConfig = (ComponentForConfig, actions, storage) => {
         }
 
         render() {
-            if (this.state.loading) {
-                return <Loading />;
-            }
-
             return (
                 <div>
                     {this.state.loading && <Loading />}
