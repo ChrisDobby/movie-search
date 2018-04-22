@@ -43,7 +43,8 @@ const WithAuthentication = (authentication, getQueryString) => (Component) => {
         authenticate() {
             this.setState({ isAuthenticating: true });
 
-            authentication.authenticate(window.location.href)
+            authentication
+                .authenticate(`${window.location.protocol}//${window.location.host}${window.location.pathname}`)
                 .then((authenticationResult) => {
                     this.updateFromAuthenticationResult(authenticationResult);
                 });

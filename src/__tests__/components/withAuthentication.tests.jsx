@@ -244,4 +244,29 @@ describe('WithAuthentication', () => {
                 expect(authentication.authenticatedAction.mock.calls).toHaveLength(1);
             });
     });
+
+    it('should remove the query string from the return url when calling authenticate', () => {
+        const authentication = {
+            ...auth,
+            authenticate: jest.fn(() => Promise.resolve({})),
+        };
+
+        const getQueryString = () => ({
+            has: () => false,
+        });
+
+        const Component = WithAuthentication(authentication, getQueryString)(TestComponent);
+        const page = shallow(<Component />);
+
+        const returnUrl = 'http://www.google.co.uk/';
+        global.jsdom.reconfigure({
+            url: `${returnUrl}?a=1`,
+        });
+
+        page.instance().authenticate();
+
+        expect(page.state().isAuthenticating).toBeTruthy();
+        expect(authentication.authenticate.mock.calls).toHaveLength(1);
+        expect(authentication.authenticate.mock.calls[0][0]).toBe(returnUrl);
+    });
 });
