@@ -17,7 +17,7 @@ const Page = ({ id, actions, config }) => {
     return (
         <div className="container">
             <div style={sectionStyle}>
-                <Details action={() => actions.getMovie(id, config)} />
+                <Details action={() => actions.getMovie(id, config)} actions={actions} />
             </div>
             <div style={sectionStyle}>
                 <CastMembers action={() => actions.getCast(id, config)} />

@@ -38,7 +38,7 @@ const Section = (DisplayComponent) => {
                         </div>
                     }
                     {!this.state.loading && this.state.data &&
-                        <DisplayComponent data={this.state.data} />}
+                        <DisplayComponent data={this.state.data} {...this.props} />}
                 </div>
             );
         }

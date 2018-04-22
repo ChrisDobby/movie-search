@@ -25,6 +25,526 @@ exports[`rateMovie should render correctly after authentication error 1`] = `
 </div>
 `;
 
+exports[`rateMovie should render correctly after sent error 1`] = `
+<div>
+  <h4>
+    Rate this movie
+  </h4>
+  <div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        1
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        2
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        3
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        4
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        5
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        6
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        7
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        8
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        9
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        10
+      </div>
+    </div>
+    <div
+      className="row"
+      style={
+        Object {
+          "marginTop": "10px",
+        }
+      }
+    >
+      <button
+        className="btn btn-secondary"
+        disabled={true}
+        onClick={[Function]}
+      >
+        Send rating
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`rateMovie should render correctly after sent successfully 1`] = `
+<div>
+  <h4>
+    Rate this movie
+  </h4>
+  <div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        1
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        2
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        3
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        4
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        5
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        6
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        7
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        8
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        9
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        10
+      </div>
+    </div>
+    <div
+      className="row"
+      style={
+        Object {
+          "marginTop": "10px",
+        }
+      }
+    >
+      <button
+        className="btn btn-secondary"
+        disabled={true}
+        onClick={[Function]}
+      >
+        Send rating
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`rateMovie should render correctly when authenticated 1`] = `
 <div>
   <h4>
@@ -265,6 +785,22 @@ exports[`rateMovie should render correctly when authenticated 1`] = `
         10
       </div>
     </div>
+    <div
+      className="row"
+      style={
+        Object {
+          "marginTop": "10px",
+        }
+      }
+    >
+      <button
+        className="btn btn-secondary"
+        disabled={true}
+        onClick={[Function]}
+      >
+        Send rating
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -312,5 +848,265 @@ exports[`rateMovie should render correctly when not authenticated 1`] = `
   >
     You are not logged in to MovieDb.  Click here to login.
   </button>
+</div>
+`;
+
+exports[`rateMovie should render correctly when sending 1`] = `
+<div>
+  <h4>
+    Rate this movie
+  </h4>
+  <div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        1
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        2
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        3
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        4
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        5
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        6
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        7
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        8
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        9
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        10
+      </div>
+    </div>
+    <div
+      className="row"
+      style={
+        Object {
+          "marginTop": "10px",
+        }
+      }
+    >
+      <button
+        className="btn btn-secondary"
+        disabled={true}
+        onClick={[Function]}
+      >
+        Send rating
+      </button>
+    </div>
+  </div>
 </div>
 `;
