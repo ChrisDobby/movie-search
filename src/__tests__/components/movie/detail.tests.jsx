@@ -13,7 +13,7 @@ describe('movieCard', () => {
     };
 
     it('should render the movie detail correctly', () => {
-        const detail = renderer.create(<Detail data={movie} />);
+        const detail = renderer.create(<Detail data={movie} actions={{}} />);
 
         expect(detail.toJSON()).toMatchSnapshot();
     });
