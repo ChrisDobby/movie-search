@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import RateMovie from './rateMovie';
 
 const imageStyle = {
     width: '100%',
@@ -29,6 +30,7 @@ const Detail = ({ data }) => (
                 <div key={genre} style={genreStyle}>{genre}</div>
             ))}
             <p>{data.overview}</p>
+            <RateMovie />
         </div>
         <div className="col-lg-4 col-md-5 col-sm-6 col-xs-12">
             <img style={imageStyle} alt={data.title} src={data.posterImage} />

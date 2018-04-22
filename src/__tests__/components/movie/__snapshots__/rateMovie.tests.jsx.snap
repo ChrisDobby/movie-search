@@ -1,0 +1,316 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rateMovie should render correctly after authentication error 1`] = `
+<div>
+  <h4>
+    Rate this movie
+  </h4>
+  <div
+    className="alert alert-danger"
+    role="alert"
+  >
+    There was an error logging in to MovieDb.
+  </div>
+  <button
+    className="btn btn-link"
+    onClick={[MockFunction]}
+    style={
+      Object {
+        "whiteSpace": "normal",
+      }
+    }
+  >
+    You are not logged in to MovieDb.  Click here to login.
+  </button>
+</div>
+`;
+
+exports[`rateMovie should render correctly when authenticated 1`] = `
+<div>
+  <h4>
+    Rate this movie
+  </h4>
+  <div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        1
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        2
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        3
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        4
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        5
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        6
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        7
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        8
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        9
+      </div>
+      <div
+        className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="presentation"
+        style={
+          Object {
+            "background": "#ffffff",
+            "border": "2px solid #ffeeba",
+            "borderRadius": "50%",
+            "color": "#856404",
+            "cursor": "pointer",
+            "fontSize": "32px",
+            "margin": "4px",
+            "maxHeight": "80px",
+            "maxWidth": "80px",
+            "padding": "8px",
+            "textAlign": "center",
+          }
+        }
+      >
+        10
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`rateMovie should render correctly when authenticating 1`] = `
+<div>
+  <h4>
+    Rate this movie
+  </h4>
+  <div
+    className="col-md-12"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    <div>
+      <i
+        className="fa fa-spinner fa-spin"
+        style={
+          Object {
+            "fontSize": "24px",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`rateMovie should render correctly when not authenticated 1`] = `
+<div>
+  <h4>
+    Rate this movie
+  </h4>
+  <button
+    className="btn btn-link"
+    onClick={[MockFunction]}
+    style={
+      Object {
+        "whiteSpace": "normal",
+      }
+    }
+  >
+    You are not logged in to MovieDb.  Click here to login.
+  </button>
+</div>
+`;

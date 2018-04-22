@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ratingStar should render correctly when not selected 1`] = `
+<div
+  className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+  onClick={[MockFunction]}
+  onKeyDown={[Function]}
+  role="presentation"
+  style={
+    Object {
+      "background": "#ffffff",
+      "border": "2px solid #ffeeba",
+      "borderRadius": "50%",
+      "color": "#856404",
+      "cursor": "pointer",
+      "fontSize": "32px",
+      "margin": "4px",
+      "maxHeight": "80px",
+      "maxWidth": "80px",
+      "padding": "8px",
+      "textAlign": "center",
+    }
+  }
+>
+  10
+</div>
+`;
+
+exports[`ratingStar should render correctly when selected 1`] = `
+<div
+  className="col-xs-3 col-sm-2 col-md-2 col-lg-1"
+  onClick={[MockFunction]}
+  onKeyDown={[Function]}
+  role="presentation"
+  style={
+    Object {
+      "background": "#fff3cd",
+      "border": "2px solid #ffeeba",
+      "borderRadius": "50%",
+      "color": "#856404",
+      "cursor": "pointer",
+      "fontSize": "32px",
+      "margin": "4px",
+      "maxHeight": "80px",
+      "maxWidth": "80px",
+      "padding": "8px",
+      "textAlign": "center",
+    }
+  }
+>
+  4
+</div>
+`;
