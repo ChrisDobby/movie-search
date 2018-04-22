@@ -1,4 +1,5 @@
 module.exports = {
+    testEnvironment: 'jest-environment-jsdom-global',
     transform: {
         '^.+\\.(js|jsx)$': '<rootDir>/node_modules/babel-jest',
         '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)$': '<rootDir>/src/__tests__/fileTransformer.js',
