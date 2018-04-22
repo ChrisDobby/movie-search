@@ -14,12 +14,20 @@ const MovieDbActions = (api, data) => {
     const getYoutubeVideos = id =>
         api.getVideos(id).then(videosData => data.youtubeVideos(videosData));
 
+    const createRequestToken = () =>
+        api.createRequestToken().then(token => data.requestToken(token));
+
+    const createSession = token =>
+        api.createSession(token).then(session => data.session(session));
+
     return {
         getConfig,
         search,
         getMovie,
         getCast,
         getYoutubeVideos,
+        createRequestToken,
+        createSession,
     };
 };
 

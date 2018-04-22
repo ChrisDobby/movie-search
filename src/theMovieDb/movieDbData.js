@@ -104,12 +104,26 @@ const MovieDbData = () => {
                 key: video.key,
             }));
 
+    /** @function requestToken
+     * @param movieDbToken the token received from the api
+     * @returns {String}
+     */
+    const requestToken = movieDbToken => movieDbToken.request_token;
+
+    /** @function session
+     * @param movieDbSession the session received from the api
+     * @returns {String}
+     */
+    const session = movieDbSession => movieDbSession.session_id;
+
     return {
         configuration,
         search,
         movie,
         cast,
         youtubeVideos,
+        requestToken,
+        session,
     };
 };
 

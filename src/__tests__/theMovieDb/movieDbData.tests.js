@@ -4,6 +4,8 @@ import searchData from '../searchData.json';
 import movieData from '../movieData.json';
 import creditsData from '../creditsData.json';
 import videosData from '../videosData.json';
+import requestTokenData from '../requestTokenData.json';
+import sessionData from '../sessionData.json';
 
 describe('movieDbData', () => {
     describe('configuration', () => {
@@ -90,6 +92,20 @@ describe('movieDbData', () => {
             expect(videos[0].id).toBe('539f7416c3a36850df00003c');
             expect(videos[0].name).toBe('PADDINGTON - Trailer 2 - On DVD, Blu-ray and Download now');
             expect(videos[0].key).toBe('qFuzMlfZGWM');
+        });
+    });
+
+    describe('requestToken', () => {
+        const requestToken = MovieDbData.requestToken(requestTokenData);
+        it('should return the token', () => {
+            expect(requestToken).toBe('7d7dec0c69687673fb4d3ab4f683c88d7770403f');
+        });
+    });
+
+    describe('session', () => {
+        const sessionId = MovieDbData.session(sessionData);
+        it('should return the session id', () => {
+            expect(sessionId).toBe('cafed597f79ab1901bb72e62284a29b8c2c5ed85');
         });
     });
 });

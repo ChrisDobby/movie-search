@@ -4,6 +4,8 @@ import searchData from '../searchData.json';
 import movieData from '../movieData.json';
 import creditsData from '../creditsData.json';
 import videosData from '../videosData.json';
+import requestTokenData from '../requestTokenData.json';
+import sessionData from '../sessionData.json';
 
 describe('movieDbActions', () => {
     const mockApi = ({
@@ -12,6 +14,8 @@ describe('movieDbActions', () => {
         getMovie: jest.fn(() => Promise.resolve(movieData)),
         getCredits: jest.fn(() => Promise.resolve(creditsData)),
         getVideos: jest.fn(() => Promise.resolve(videosData)),
+        createRequestToken: jest.fn(() => Promise.resolve(requestTokenData)),
+        createSession: jest.fn(() => Promise.resolve(sessionData)),
     });
 
     const mockConfig = ({
@@ -22,6 +26,8 @@ describe('movieDbActions', () => {
     const mockMovie = { id: 1 };
     const mockCast = { id: 2 };
     const mockVideos = { id: 3 };
+    const mockToken = '987654321';
+    const mockSessionId = 'xxxxxxxxxx';
 
     const mockDataTransform = ({
         configuration: jest.fn(() => mockConfig),
@@ -29,6 +35,8 @@ describe('movieDbActions', () => {
         movie: jest.fn(() => mockMovie),
         cast: jest.fn(() => mockCast),
         youtubeVideos: jest.fn(() => mockVideos),
+        requestToken: jest.fn(() => mockToken),
+        session: jest.fn(() => mockSessionId),
     });
 
     const actions = MovieDbActions(mockApi, mockDataTransform);
@@ -124,5 +132,35 @@ describe('movieDbActions', () => {
                 expect(data).toEqual(mockVideos);
             });
         });
+    });
+
+    describe('createRequestToken', () => {
+        it('should call createRequestToken on the api and requestToken data transformation', () =>
+            actions.createRequestToken().then(() => {
+                expect(mockApi.createRequestToken.mock.calls).toHaveLength(1);
+                expect(mockDataTransform.requestToken.mock.calls).toHaveLength(1);
+                expect(mockDataTransform.requestToken.mock.calls[0][0]).toEqual(requestTokenData);
+            }));
+
+        it('should return a promise with the transformation result', () =>
+            actions.createRequestToken().then((requestToken) => {
+                expect(requestToken).toEqual(mockToken);
+            }));
+    });
+
+    describe('createSession', () => {
+        const token = '987654321';
+        it('should createSession on the api and session data transformation', () =>
+            actions.createSession(token).then(() => {
+                expect(mockApi.createSession.mock.calls).toHaveLength(1);
+                expect(mockApi.createSession.mock.calls[0][0]).toEqual(token);
+                expect(mockDataTransform.session.mock.calls).toHaveLength(1);
+                expect(mockDataTransform.session.mock.calls[0][0]).toEqual(sessionData);
+            }));
+
+        it('should return a promise with the transformation result', () =>
+            actions.createSession(token).then((sessionId) => {
+                expect(sessionId).toEqual(mockSessionId);
+            }));
     });
 });

@@ -5,8 +5,13 @@ const SearchRoute = '/search';
 const MovieRoute = '/movie';
 const CreditsRoute = '/credits';
 const VideosRoute = '/videos';
+const AuthenticationRoute = '/authentication';
+const TokenRoute = '/token';
+const SessionRoute = '/session';
+const NewRoute = '/new';
 const ApiKeyQueryString = 'api_key';
 const SearchQueryString = 'query';
+const RequestTokenQueryString = 'request_token';
 
 const handleResponse = (response, resolve, reject) => {
     if (!response.ok) {
@@ -53,12 +58,30 @@ const TheMovieDbApi = (apiUrl, apiKey) => {
         fetch(`${apiUrl}${MovieRoute}/${movieId}${VideosRoute}?${ApiKeyQueryString}=${apiKey}`)
             .then(response => handleResponse(response, resolve, reject)));
 
+    /** @function createRequestToken
+     * Creates a temporary request token
+     */
+    const createRequestToken = () => new Promise((resolve, reject) =>
+        fetch(`${apiUrl}${AuthenticationRoute}${TokenRoute}${NewRoute}?${ApiKeyQueryString}=${apiKey}`)
+            .then(response => handleResponse(response, resolve, reject)));
+
+    /** @function createSession
+     * Creates a valid session id
+     * @param token the request token
+     */
+    const createSession = token => new Promise((resolve, reject) =>
+        fetch(`${apiUrl}${AuthenticationRoute}${SessionRoute}${NewRoute}` +
+            `?${ApiKeyQueryString}=${apiKey}&${RequestTokenQueryString}=${token}`)
+            .then(response => handleResponse(response, resolve, reject)));
+
     return {
         getConfig,
         searchMovie,
         getMovie,
         getCredits,
         getVideos,
+        createRequestToken,
+        createSession,
     };
 };
 

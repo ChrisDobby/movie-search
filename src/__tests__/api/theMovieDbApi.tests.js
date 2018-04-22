@@ -4,6 +4,8 @@ import searchData from '../searchData.json';
 import movieData from '../movieData.json';
 import creditsData from '../creditsData.json';
 import videosData from '../videosData.json';
+import requestTokenData from '../requestTokenData.json';
+import sessionData from '../sessionData.json';
 
 describe('theMovieDbApi', () => {
     const apiUrl = 'http://testurl.com';
@@ -178,6 +180,72 @@ describe('theMovieDbApi', () => {
             fetch.mockResponseOnce({});
 
             return api.getVideos(movieId).then((data) => {
+                expect(data).toBeFalsy();
+            });
+        });
+    });
+
+    describe('createRequestToken', () => {
+        it('should fetch from the correct url', () => {
+            api.createRequestToken();
+
+            expect(fetch.mock.calls).toHaveLength(1);
+            expect(fetch.mock.calls[0][0]).toBe(`${apiUrl}/authentication/token/new?api_key=${apiKey}`);
+        });
+
+        it('should return the token from the response', () => {
+            fetch.mockResponseOnce(JSON.stringify(requestTokenData));
+            return api.createRequestToken().then((token) => {
+                expect(token).toEqual(requestTokenData);
+            });
+        });
+
+        it('should return the error if the call fails', () => {
+            fetch.mockResponseOnce(JSON.stringify({}), { status: 404 });
+
+            return api.createRequestToken().catch((error) => {
+                expect(error).toEqual('Not Found');
+            });
+        });
+
+        it('should return nothing if the body cannot be parsed', () => {
+            fetch.mockResponseOnce({});
+
+            return api.createRequestToken().then((data) => {
+                expect(data).toBeFalsy();
+            });
+        });
+    });
+
+    describe('createSession', () => {
+        const token = '9876543210';
+        it('should fetch from the correct url', () => {
+            api.createSession(token);
+
+            expect(fetch.mock.calls).toHaveLength(1);
+            expect(fetch.mock.calls[0][0])
+                .toBe(`${apiUrl}/authentication/session/new?api_key=${apiKey}&request_token=${token}`);
+        });
+
+        it('should return the session from the response', () => {
+            fetch.mockResponseOnce(JSON.stringify(sessionData));
+            return api.createSession(token).then((session) => {
+                expect(session).toEqual(sessionData);
+            });
+        });
+
+        it('should return the error if the call fails', () => {
+            fetch.mockResponseOnce(JSON.stringify({}), { status: 404 });
+
+            return api.createSession(token).catch((error) => {
+                expect(error).toEqual('Not Found');
+            });
+        });
+
+        it('should return nothing if the body cannot be parsed', () => {
+            fetch.mockResponseOnce({});
+
+            return api.createSession(token).then((data) => {
                 expect(data).toBeFalsy();
             });
         });
