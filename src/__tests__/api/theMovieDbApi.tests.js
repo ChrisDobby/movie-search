@@ -250,4 +250,24 @@ describe('theMovieDbApi', () => {
             });
         });
     });
+
+    describe('rateMovie', () => {
+        const sessionId = '1234567890';
+        const movieId = 9;
+        it('should post to the correct url', () => {
+            api.rateMovie(9, 1, sessionId);
+
+            expect(fetch.mock.calls).toHaveLength(1);
+            expect(fetch.mock.calls[0][0])
+                .toBe(`${apiUrl}/movie/${movieId}/rating?api_key=${apiKey}&session_id=${sessionId}`);
+            expect(fetch.mock.calls[0][1].method).toBe('POST');
+        });
+
+        it('should post the rating', () => {
+            api.rateMovie(9, 1, sessionId);
+
+            expect(fetch.mock.calls).toHaveLength(1);
+            expect(fetch.mock.calls[0][1].body).toEqual(JSON.stringify({ value: 1 }));
+        });
+    });
 });

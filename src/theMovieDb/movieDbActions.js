@@ -20,6 +20,9 @@ const MovieDbActions = (api, data) => {
     const createSession = token =>
         api.createSession(token).then(session => data.session(session));
 
+    const rateMovie = (movieId, rating) => sessionId =>
+        api.rateMovie(movieId, rating, sessionId);
+
     return {
         getConfig,
         search,
@@ -28,6 +31,7 @@ const MovieDbActions = (api, data) => {
         getYoutubeVideos,
         createRequestToken,
         createSession,
+        rateMovie,
     };
 };
 

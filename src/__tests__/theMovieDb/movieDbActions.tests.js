@@ -16,6 +16,7 @@ describe('movieDbActions', () => {
         getVideos: jest.fn(() => Promise.resolve(videosData)),
         createRequestToken: jest.fn(() => Promise.resolve(requestTokenData)),
         createSession: jest.fn(() => Promise.resolve(sessionData)),
+        rateMovie: jest.fn(() => Promise.resolve()),
     });
 
     const mockConfig = ({
@@ -162,5 +163,19 @@ describe('movieDbActions', () => {
             actions.createSession(token).then((sessionId) => {
                 expect(sessionId).toEqual(mockSessionId);
             }));
+    });
+
+    describe('rateMovie', () => {
+        it('should call rateMovie on the api', () => {
+            const sessionId = '987654321';
+            const movieId = 9;
+            const rating = 1;
+            return actions.rateMovie(movieId, rating)(sessionId).then(() => {
+                expect(mockApi.rateMovie.mock.calls).toHaveLength(1);
+                expect(mockApi.rateMovie.mock.calls[0][0]).toBe(movieId);
+                expect(mockApi.rateMovie.mock.calls[0][1]).toBe(rating);
+                expect(mockApi.rateMovie.mock.calls[0][2]).toBe(sessionId);
+            });
+        });
     });
 });

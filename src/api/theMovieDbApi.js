@@ -9,9 +9,11 @@ const AuthenticationRoute = '/authentication';
 const TokenRoute = '/token';
 const SessionRoute = '/session';
 const NewRoute = '/new';
+const RatingRoute = '/rating';
 const ApiKeyQueryString = 'api_key';
 const SearchQueryString = 'query';
 const RequestTokenQueryString = 'request_token';
+const SessionIdQueryString = 'session_id';
 
 const handleResponse = (response, resolve, reject) => {
     if (!response.ok) {
@@ -74,6 +76,25 @@ const TheMovieDbApi = (apiUrl, apiKey) => {
             `?${ApiKeyQueryString}=${apiKey}&${RequestTokenQueryString}=${token}`)
             .then(response => handleResponse(response, resolve, reject)));
 
+    /** @function rateMovie
+     * Posts a rating of a movie
+     * @param movieId the id of the movie
+     * @param rating the rating
+     * @param sessionId the session id of the user
+     */
+    const rateMovie = (movieId, rating, sessionId) =>
+        fetch(
+            `${apiUrl}${MovieRoute}/${movieId}${RatingRoute}` +
+            `?${ApiKeyQueryString}=${apiKey}&${SessionIdQueryString}=${sessionId}`,
+            {
+                method: 'POST',
+                body: JSON.stringify({ value: rating }),
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }
+        );
+
     return {
         getConfig,
         searchMovie,
@@ -82,6 +103,7 @@ const TheMovieDbApi = (apiUrl, apiKey) => {
         getVideos,
         createRequestToken,
         createSession,
+        rateMovie,
     };
 };
 
