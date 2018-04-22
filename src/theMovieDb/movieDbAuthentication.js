@@ -63,10 +63,21 @@ const movieDbAuthentication = (storage, actions, redirect) => {
         }
     });
 
+    const authenticatedAction = action => new Promise((resolve, reject) => {
+        const sessionId = storage.getItem(sessionStorageKey);
+        if (!sessionId) {
+            reject(new Error('no session'));
+            return;
+        }
+
+        resolve(action(sessionId));
+    });
+
     return {
         isAuthenticated,
         authenticate,
         createSession,
+        authenticatedAction,
     };
 };
 

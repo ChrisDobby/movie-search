@@ -64,6 +64,7 @@ const WithAuthentication = (authentication, getQueryString) => (Component) => {
                 isAuthenticating={this.state.isAuthenticating}
                 authenticate={this.authenticate}
                 authenticationError={this.state.authenticationError}
+                authenticatedAction={action => authentication.authenticatedAction(action)}
             />);
         }
     }

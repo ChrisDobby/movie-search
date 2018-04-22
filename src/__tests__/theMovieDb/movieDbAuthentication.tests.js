@@ -159,4 +159,31 @@ describe('movieDbAuthentication', () => {
             });
         });
     });
+
+    describe('authenticatedAction', () => {
+        it('should call the function with the sessionId as parameter', () => {
+            const storage = {
+                getItem: () => mockSessionId,
+            };
+
+            const authentication = MovieDbAuthentication(storage);
+            const action = jest.fn(() => Promise.resolve());
+
+            authentication.authenticatedAction(action).then(() => {
+                expect(action.mock.calls).toHaveLength(1);
+                expect(action.mock.calls[0][0]).toBe(mockSessionId);
+            });
+        });
+
+        it('should fail if no sessionId available', () => {
+            const storage = {
+                getItem: () => null,
+            };
+
+            const authentication = MovieDbAuthentication(storage);
+            const action = jest.fn(() => Promise.resolve());
+
+            return expect(authentication.authenticatedAction(action)).rejects.toEqual(new Error('no session'));
+        });
+    });
 });

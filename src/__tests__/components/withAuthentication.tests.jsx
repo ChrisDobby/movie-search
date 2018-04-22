@@ -15,6 +15,7 @@ TestComponent.defaultProps = {
 
 const auth = {
     isAuthenticated: () => false,
+    authenticatedAction: () => Promise.resolve({}),
 };
 
 describe('WithAuthentication', () => {
@@ -220,6 +221,27 @@ describe('WithAuthentication', () => {
         return new Promise(resolve => setImmediate(resolve))
             .then(() => {
                 expect(page.state().authenticationError).toBeTruthy();
+            });
+    });
+
+    it('should call authenticatedAction', () => {
+        const authentication = {
+            ...auth,
+            authenticatedAction: jest.fn(() => Promise.resolve({})),
+        };
+
+        const getQueryString = () => ({
+            has: () => false,
+        });
+
+        const Component = WithAuthentication(authentication, getQueryString)(TestComponent);
+        const page = shallow(<Component />);
+
+        page.find(TestComponent).at(0).props().authenticatedAction(() => { });
+
+        return new Promise(resolve => setImmediate(resolve))
+            .then(() => {
+                expect(authentication.authenticatedAction.mock.calls).toHaveLength(1);
             });
     });
 });
